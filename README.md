@@ -18,7 +18,7 @@ cd oopexercises
 javac <file-name>.java
 java <file-name>
 ```
-#Exercises
+# Exercises
 
 In each folder there is a pdf/txt file which contain the proposed problem.
 The solutions are found inside the same folder with the problems.
