@@ -1,0 +1,1 @@
+1) Define a five classes called: 1) University (University.java), 2) Author (Author.java), 3) Publication (Publication.java),  4) Journal (Journal.java) and 5) ConferenceProceeding (ConferenceProceeding.java). Define another class, called UniversityTest (UniversityTest.java), which will include main method, for compute the score. 

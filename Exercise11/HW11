@@ -1,0 +1,3 @@
+1) Create the classes BankAccount (BankAccount.java), SavingsAccount(SavingsAccount.java), CurrentAccount (CurrentAccount.java) and TestAccount (TestAccount.java) which contains the main method.
+
+2) Create the classes OfficeAssistanceProduct (OfficeAssistanceProduct.java), Printer (Printer.java), CopyMachine (CopyMachine.java), Computer (Computer.java)  and TestShop (TestShop.java) which contains the main method. 

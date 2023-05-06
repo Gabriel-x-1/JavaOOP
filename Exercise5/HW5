@@ -1,0 +1,13 @@
+Exercise 1
+
+
+Define a class, called Circle, having the methods getArea(), which returns the area of a circle and getCircumference(), which returns the circumference of a circle. The constructor has as arguments the coordinates of the center (two integers) and the radius of the circle (a double).
+
+
+Exercise 2
+
+
+Create an account on https://www.codingame.com/start
+
+
+Solve the first two exercises. Copy the solution in a text file.

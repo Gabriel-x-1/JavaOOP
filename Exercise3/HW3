@@ -1,0 +1,33 @@
+Ex 1
+
+
+Write a class Distance in which you implement a method 
+
+
+public static double distance(double x1, double y1, double x2, double y2) {…} 
+
+
+that computes the distance between two points with coordinates (x1,y1) and (x2,y2) using the Euclidian distance formula.
+
+
+Test your method for points A(0,0) and B(4,5).
+
+
+Ex 2
+
+
+Write a class MatrixOperations in which you implement the methods: 
+
+
+public static double[][] matrixAdd(double m1[][], double m2[][]) {…}
+
+
+that returns a matrix which is the sum of matrix m1 and matrix m2. m1 and m2 have the same dimensions.
+
+
+public static double matrixDiagSum(double m1[][]) {…} 
+
+
+that returns the sum of the elements on the first diagonal of matrix m1. Consider the matrix m1 to be square.
+
+

@@ -1,0 +1,87 @@
+//Introduction
+import java.util.*;
+
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+
+        // game loop
+        while (true) {
+            String enemy1 = in.next(); // name of enemy 1
+            int dist1 = in.nextInt(); // distance to enemy 1
+            String enemy2 = in.next(); // name of enemy 2
+            int dist2 = in.nextInt(); // distance to enemy 2
+
+            // Write an action using System.out.println()
+
+            if (dist1 < dist2) {
+                System.out.println(enemy1);
+            } else {
+                System.out.println(enemy2);
+            }
+            // Enter the code here
+
+        }
+    }
+}
+
+
+//MAD POD RACING
+//https://www.codingame.com/multiplayer/bot-programming/mad-pod-racing
+import java.util.*;
+import java.io.*;
+import java.math.*;
+
+/**
+ * Auto-generated code below aims at helping you parse
+ * the standard input according to the problem statement.
+ **/
+class Player {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        boolean accelerate = false;
+        // game loop
+        while (true) {
+            int x = in.nextInt();
+            int y = in.nextInt();
+            int nextCheckpointX = in.nextInt(); // x position of the next check point
+            int nextCheckpointY = in.nextInt(); // y position of the next check point
+            int nextCheckpointDist = in.nextInt(); // distance to the next checkpoint
+            int nextCheckpointAngle = in.nextInt(); // angle between your pod orientation and the direction of the next checkpoint
+            int opponentX = in.nextInt();
+            int opponentY = in.nextInt();
+            String thrust =" 100";
+            // Write an action using System.out.println()
+             if(nextCheckpointAngle > 90 || nextCheckpointAngle < -90 )
+            {
+                thrust =" 0";
+            }
+            else {
+                thrust=" 100";
+            }
+            
+           if (nextCheckpointDist>3000 && nextCheckpointDist<9000)
+           {
+            thrust=" BOOST";
+            accelerate= true;
+           }
+           if(nextCheckpointDist<2000 && accelerate== true)
+           {
+            thrust=" 100";
+            accelerate = false;
+           }
+           if(nextCheckpointDist<800)thrust= " 10";
+            // To debug: System.err.println("Debug messages...");
+            System.err.println("Next checkpoint distance:"+nextCheckpointDist);
+            System.err.println("Next checkpoint Angle:"+nextCheckpointAngle);
+
+
+            // You have to output the target position
+            // followed by the power (0 <= thrust <= 100)
+            // i.e.: "x y thrust"
+            System.out.println(nextCheckpointX + " " + nextCheckpointY + thrust);
+        }
+    }
+}
